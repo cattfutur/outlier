@@ -1,0 +1,363 @@
+Dear Jamie, 
+
+The web as we know it is indeed disappearing, transforming into something both more ethereal and more deeply embedded in our lives. I just inhaled "The Post Web" report, and it couldn't have resonated more. For almost a decade my work—both professionally and personally—has been about finding the sweet spot between immersion in cutting-edge technologies (neural audio synthesis, generative AI agents, quantum biotech, blockchain systems) and remaining grounded in our physical reality. It's about remembering to touch grass—literally and metaphorically—and exploring how technology can enhance rather than replace our connection to the natural world.
+
+While working at a non-profit in Copenhagen, developing smart contracts to alleviate double-spending issues in municipalities, I came across the concept of Plantoids, pioneered by Primavera De Filippi and developed with Ruth Catlow. These blockchain-based organisms, which grow when fed tokens, challenge our traditional notions of art ownership and creation. As we move into 2024 and 2025, we're witnessing an evolution where these digital-organic hybrids may potentially exist independently of their creators, continuing to inspire awe as their artists move on to new frontiers of exploration.
+
+This brings me to a central question that drives my work: How do we make the revolution irresistible? How can we inspire awe? How do we communicate both the promise and peril of our moment with enough wonder to pierce through the collective complacency that wraps around our minds like a deadly blanket? The answer, I believe, lies in experimental practice.
+
+In 2018, I put this belief into action by building a physical studio, bootstrapped with a few thousand dollars and the diverse talents of friends—engineers, artists, sound designers, musicians, dancers, writers, coders, and scientists. While this experiment (documented through <a href="https://linktr.ee/320colab">320colab</a> and a <a href="https://pods.media/rehash/s7-e7-rethinking-community-building-through-crypto-rails-waiio">Rehash</a>) was fruitful, I'm now hungry for something more: a digi-physical space where people, technology, physical objects, and concepts can converge spontaneously, lifting the veil between different realms of understanding. Perhaps your think tank is a good place to start? :)
+
+A hyper-contextual, tailored immersive world, which you reference in your report, is really not that far off. I believe that building spaces where diversity can merge and explore unbounded concepts is crucial if we are to be ready for the transition towards an intent-based, adaptive, trusting ecosystem that is on our doorstep. And I'd love to contribute to creating pathways for this development.
+
+My hunger for convergence has led me down exciting paths of exploration and experimentation:
+
+- **Collaborating with Moisés Horta Valenzuela (aka hexorcismos):** Moisés built semilla.ai, a neural audio synthesizer that reimagines randomness and music creation. Our <a href="https://ufo.mirror.xyz/Pifu_UYAW7nvMVkCmLY7y84rzF9er_cuqFaRzvf6DTI">UFO.FM</a> conversation examines how personal style can be embedded in artificial neural networks while challenging political biases in mass culture through techno-poetics in generative computation. 
+
+- **Launching _<a href="https://ufo.fm/show/co-tone">co-tone</a>, a radio show on UFO.FM:** Inspired by ecotones—zones where different natural environments meet to create something new—this platform encourages sharing work and experimenting with formats, from live streams to conversations, to break down silos between perspectives. 
+
+- **Exploring how we might create systems that serve human needs rather than corporate interests** through my full-time work at a fintech startup building distributed databases on hashgraph technology, and my research into community currencies based.  
+
+- **Exploring more-than-human agency in urban regeneration**, though my recent encounters with artists and designers from Dark Matter Labs, sparking new questions about how we might apply these concepts to the digital sphere. This connects to my work with Holochain and the Radiance project, which aims to flip the concept of mindless social media on its head, creating spaces for meaningful digital interaction.
+
+- In the past month, I've been tinkering with the open-source Eliza framework for building AI agents to create an investment simulation platform as an artistic provocation that brings awareness to the water cycle and water scarcity. I think this would vibe well with your call for research.
+
+Thanks for taking the time to read my thoughts. Here's a link to my <a href="https://aiio.studio/">portfolio</a>.
+
+I'd love to connect over a call or in person, and see where we can go from there. I'm actually in London until the 29th December if you're about?
+
+Kindly, Irina<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Trip - Hydra Style</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow: hidden;
+            background: #000;
+        }
+
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .content {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            color: white;
+            padding: 2rem;
+            font-family: Arial, sans-serif;
+            width: 80%;
+            max-width: 800px;
+            height: 70vh;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            overflow-y: auto;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .content::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .content::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+        }
+
+        .content::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+        }
+
+        .content::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        .text-content {
+            line-height: 1.6;
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.9);
+            white-space: pre-wrap;
+        }
+
+        .text-content a {
+            color: #00ffcc;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(0, 255, 204, 0.3);
+        }
+
+        .text-content a:hover {
+            color: #fff;
+            border-bottom-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="glCanvas"></canvas>
+    <div class="content">
+        <div class="text-content">Dear Jamie, 
+
+The web as we know it is indeed disappearing, transforming into something both more ethereal and more deeply embedded in our lives. I just inhaled "The Post Web" report, and it couldn't have resonated more. For almost a decade my work—both professionally and personally—has been about finding the sweet spot between immersion in cutting-edge technologies (neural audio synthesis, generative AI agents, quantum biotech, blockchain systems) and remaining grounded in our physical reality. It's about remembering to touch grass—literally and metaphorically—and exploring how technology can enhance rather than replace our connection to the natural world.
+
+While working at a non-profit in Copenhagen, developing smart contracts to alleviate double-spending issues in municipalities, I came across the concept of Plantoids, pioneered by Primavera De Filippi and developed with Ruth Catlow. These blockchain-based organisms, which grow when fed tokens, challenge our traditional notions of art ownership and creation. As we move into 2024 and 2025, we're witnessing an evolution where these digital-organic hybrids may potentially exist independently of their creators, continuing to inspire awe as their artists move on to new frontiers of exploration.
+
+This brings me to a central question that drives my work: How do we make the revolution irresistible? How can we inspire awe? How do we communicate both the promise and peril of our moment with enough wonder to pierce through the collective complacency that wraps around our minds like a deadly blanket? The answer, I believe, lies in experimental practice.
+
+In 2018, I put this belief into action by building a physical studio, bootstrapped with a few thousand dollars and the diverse talents of friends—engineers, artists, sound designers, musicians, dancers, writers, coders, and scientists. While this experiment (documented through 320colab and our podcast) was fruitful, I'm now hungry for something more: a digi-physical space where people, technology, physical objects, and concepts can converge spontaneously, lifting the veil between different realms of understanding. Perhaps your think tank is a good place to start? :)
+
+A hyper-contextual, tailored immersive world, which you reference in your report, is really not that far off. I believe that building spaces where diversity can merge and explore unbounded concepts is crucial if we are to be ready for the transition towards an intent-based, adaptive, trusting ecosystem that is on our doorstep. And I'd love to contribute to creating pathways for this development.
+
+My hunger for convergence has led me down exciting paths of exploration and experimentation:
+
+- I've been collaborating with Moisés Horta Valenzuela, aka hexorcismos. He's built semilla.ai, a neural audio synthesizer that reimagines how we approach randomness and music creation. Our <a href="https://ufo.mirror.xyz/Pifu_UYAW7nvMVkCmLY7y84rzF9er_cuqFaRzvf6DTI">conversation</a>, documented on UFO.FM, examines how personal style can be embedded in artificial neural networks while challenging political biases in mass culture through techno-poetics in generative computation. 
+
+- To further break down silos between different perspectives, I'm launching <a href="https://ufo.fm/show/co-tone">co-tone</a>, a radio show on UFO.FM inspired by ecotones - zones where different natural environments meet to create something new. It's designed as a platform for people to share their work and experiment with various formats, from live streams to conversations.
+
+- Through my full-time work at a fintech startup building distributed databases on hashgraph technology, and my research into community currencies based, I'm exploring how we might create systems that serve human needs rather than corporate interests. 
+
+- Recent encounters with artists and designers from Dark Matter Labs, exploring more-than-human agency in urban regeneration, have sparked new questions about how we might apply these concepts to the digital sphere. This connects to my work with Holochain and the Radiance project, which aims to flip the concept of mindless social media on its head, creating spaces for meaningful digital interaction.
+
+- In the past month, I've been tinkering with the open-source Eliza framework for building AI agents to create an investment simulation platform as an artistic provocation that brings awareness to the water cycle and water scarcity. I think this would vibe well with your call for research.
+
+Thanks for taking the time to read my thoughts. Here's a link to my <a href="https://aiio.studio/">portfolio</a>.
+
+I'd love to connect over a call or in person, and see where we can go from there. I'm actually in London until the 29th December if you're about?
+
+Kindly, Irina</div>
+    </div>
+
+    <script>
+        const vertexShaderSource = `
+            attribute vec4 aVertexPosition;
+            attribute vec2 aTextureCoord;
+            varying vec2 vTextureCoord;
+            void main() {
+                gl_Position = aVertexPosition;
+                vTextureCoord = aTextureCoord;
+            }
+        `;
+
+        const fragmentShaderSource = `
+            precision highp float;
+            varying vec2 vTextureCoord;
+            uniform float uTime;
+            uniform vec2 uResolution;
+            uniform vec2 uScroll;
+
+            // Noise function
+            vec2 random2(vec2 p) {
+                return fract(sin(vec2(dot(p,vec2(127.1,311.7)),dot(p,vec2(269.5,183.3))))*43758.5453);
+            }
+
+            // Voronoi function
+            float voronoi(vec2 x, float cells) {
+                x *= cells;
+                vec2 n = floor(x);
+                vec2 f = fract(x);
+
+                float m_dist = 8.0;
+                for(int j=-1; j<=1; j++) {
+                    for(int i=-1; i<=1; i++) {
+                        vec2 g = vec2(float(i),float(j));
+                        vec2 o = random2(n + g);
+                        o = 0.5 + 0.5*sin(uTime + 6.2831*o);
+                        vec2 r = g + o - f;
+                        float d = dot(r,r);
+                        m_dist = min(m_dist, d);
+                    }
+                }
+                return sqrt(m_dist);
+            }
+
+            // Shape function
+            float shape(vec2 st, float sides, float size) {
+                float d = 0.0;
+                st = st * 2.0 - 1.0;
+                float angle = atan(st.x, st.y) + uTime;
+                float radius = length(st) * size;
+                float a = mod(angle + 3.14 / sides, 2.0 * 3.14 / sides) - 3.14 / sides;
+                d = cos(a) * radius;
+                return 1.0 - smoothstep(0.4, 0.41, d);
+            }
+
+            void main() {
+                vec2 st = gl_FragCoord.xy/uResolution.xy;
+                st.x *= uResolution.x/uResolution.y;
+                
+                // Apply scroll effect
+                st += uScroll * vec2(0.1, 0.1);
+                
+                // First voronoi layer
+                float v1 = voronoi(st, 10.0);
+                
+                // Shape layer
+                float s1 = shape(st, 3.0, 0.125);
+                
+                // Second voronoi layer with rotation
+                vec2 st2 = st;
+                float angle = uTime * 0.5;
+                float c = cos(angle);
+                float s = sin(angle);
+                st2 = mat2(c, -s, s, c) * (st2 - 0.5) + 0.5;
+                float v2 = voronoi(st2, 8.0);
+                
+                // Combine layers
+                float final = mix(v1, v2, 0.5) + s1;
+                final = pow(final, 1.5); // Add contrast
+                
+                // Color mapping with inversion
+                vec3 color = vec3(1.0 - (0.5 + final * 0.5));
+                color = mix(vec3(0.9, 0.8, 0.5), vec3(0.0, 0.2, 0.6), 1.0 - final);
+                
+                gl_FragColor = vec4(color, 1.0);
+            }
+        `;
+
+        function initShaderProgram(gl, vsSource, fsSource) {
+            const vertexShader = loadShader(gl, gl.VERTEX_SHADER, vsSource);
+            const fragmentShader = loadShader(gl, gl.FRAGMENT_SHADER, fsSource);
+
+            const shaderProgram = gl.createProgram();
+            gl.attachShader(shaderProgram, vertexShader);
+            gl.attachShader(shaderProgram, fragmentShader);
+            gl.linkProgram(shaderProgram);
+
+            if (!gl.getProgramParameter(shaderProgram, gl.LINK_STATUS)) {
+                console.error('Unable to initialize the shader program: ' + gl.getProgramInfoLog(shaderProgram));
+                return null;
+            }
+
+            return shaderProgram;
+        }
+
+        function loadShader(gl, type, source) {
+            const shader = gl.createShader(type);
+            gl.shaderSource(shader, source);
+            gl.compileShader(shader);
+
+            if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+                console.error('An error occurred compiling the shaders: ' + gl.getShaderInfoLog(shader));
+                gl.deleteShader(shader);
+                return null;
+            }
+
+            return shader;
+        }
+
+        function main() {
+            const canvas = document.querySelector("#glCanvas");
+            const gl = canvas.getContext("webgl");
+
+            if (gl === null) {
+                console.error("Unable to initialize WebGL.");
+                return;
+            }
+
+            const shaderProgram = initShaderProgram(gl, vertexShaderSource, fragmentShaderSource);
+            
+            const programInfo = {
+                program: shaderProgram,
+                attribLocations: {
+                    vertexPosition: gl.getAttribLocation(shaderProgram, 'aVertexPosition'),
+                    textureCoord: gl.getAttribLocation(shaderProgram, 'aTextureCoord'),
+                },
+                uniformLocations: {
+                    time: gl.getUniformLocation(shaderProgram, 'uTime'),
+                    resolution: gl.getUniformLocation(shaderProgram, 'uResolution'),
+                    scroll: gl.getUniformLocation(shaderProgram, 'uScroll'),
+                },
+            };
+
+            // Create buffers
+            const positions = new Float32Array([
+                -1.0, -1.0,
+                 1.0, -1.0,
+                -1.0,  1.0,
+                 1.0,  1.0,
+            ]);
+
+            const positionBuffer = gl.createBuffer();
+            gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
+            gl.bufferData(gl.ARRAY_BUFFER, positions, gl.STATIC_DRAW);
+
+            const textureCoordinates = new Float32Array([
+                0.0, 0.0,
+                1.0, 0.0,
+                0.0, 1.0,
+                1.0, 1.0,
+            ]);
+
+            const textureCoordBuffer = gl.createBuffer();
+            gl.bindBuffer(gl.ARRAY_BUFFER, textureCoordBuffer);
+            gl.bufferData(gl.ARRAY_BUFFER, textureCoordinates, gl.STATIC_DRAW);
+
+            let scroll = { x: 0, y: 0 };
+            window.addEventListener('scroll', () => {
+                scroll.x = window.scrollX / window.innerWidth;
+                scroll.y = window.scrollY / window.innerHeight;
+            });
+
+            function resizeCanvasToDisplaySize() {
+                const displayWidth = canvas.clientWidth;
+                const displayHeight = canvas.clientHeight;
+
+                if (canvas.width !== displayWidth || canvas.height !== displayHeight) {
+                    canvas.width = displayWidth;
+                    canvas.height = displayHeight;
+                    gl.viewport(0, 0, gl.canvas.width, gl.canvas.height);
+                }
+            }
+
+            function render(time) {
+                resizeCanvasToDisplaySize();
+
+                gl.clearColor(0.0, 0.0, 0.0, 1.0);
+                gl.clear(gl.COLOR_BUFFER_BIT);
+
+                gl.useProgram(programInfo.program);
+
+                // Set uniforms
+                gl.uniform1f(programInfo.uniformLocations.time, time * 0.001);
+                gl.uniform2f(programInfo.uniformLocations.resolution, gl.canvas.width, gl.canvas.height);
+                gl.uniform2f(programInfo.uniformLocations.scroll, scroll.x, scroll.y);
+
+                // Set position attribute
+                gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
+                gl.vertexAttribPointer(programInfo.attribLocations.vertexPosition, 2, gl.FLOAT, false, 0, 0);
+                gl.enableVertexAttribArray(programInfo.attribLocations.vertexPosition);
+
+                // Set texture coordinate attribute
+                gl.bindBuffer(gl.ARRAY_BUFFER, textureCoordBuffer);
+                gl.vertexAttribPointer(programInfo.attribLocations.textureCoord, 2, gl.FLOAT, false, 0, 0);
+                gl.enableVertexAttribArray(programInfo.attribLocations.textureCoord);
+
+                // Draw
+                gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+
+                requestAnimationFrame(render);
+            }
+
+            requestAnimationFrame(render);
+        }
+
+        window.onload = main;
+    </script>
+</body>
+</html>
